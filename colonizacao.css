@@ -1,0 +1,153 @@
+/* Configurações Gerais */
+
+body {
+    margin: 0;
+    background-color: #f5f2e8;
+    color: #123d35;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 1200px;
+    margin:auto
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+h2 {
+    color: #073f34;
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100px;
+}
+
+/* Cabeçalho  */
+
+header {
+    background-color: #064f3b;
+    color: white;
+}
+
+.cabecalho {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Banner Princinpal */
+
+.banner-detalhe {
+    background-color: #07523d;
+    background-image:url(imagens/banner-colonizacao.jpg) ;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 30px;
+}
+
+.banner-detalhe-conteudo {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.banner-detalhe-conteudo p:first-child {
+    color: #f4c928;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.banner-detalhe-conteudo h1 {
+    color: white;
+}
+.banner-detalhe-conteudo p:last-child {
+    max-width: 550px;
+    font-size: 18px;
+}
+
+/* Introdução */
+
+.introducao-detalhe {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.imagem-detalhe {
+    width: 45%;
+}
+
+.imagem-detalhe img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.texto-detalhe {
+    width: 55%;
+}
+
+.texto-detalhe p:first-child {
+    color: #087653;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.texto-detalhe h2 {
+    margin-top: 5px ;
+}
+
+/* Sessões de Conteúdo */
+
+.secao-detalhe {
+    background-color: #e6eee7;
+    padding: 35px 30px;
+    margin-bottom: 25px;
+}
+
+.titulo-secao p {
+    color: #087653;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.titulo-secao h2 {
+    margin-top: 5px;
+}
+
+.conteudo-detalhe {
+    max-width: 1000px;
+}
+
+/* Lista */
+
+.lista-detalhe {
+    background-color: #e6eee7;
+    padding: 10px 20px;
+    border-left: 5px solid #d9aa24 ;
+}
+
+.lista-detalhe ul {
+    padding-left: 20px;
+}
+
+.lista-detalhe li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
