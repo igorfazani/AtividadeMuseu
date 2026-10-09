@@ -151,3 +151,26 @@ header {
     line-height: 1.6;
 }
 
+/* Curiosidade */
+
+.curiosidade-detalhe {
+    background-color: #e6eee7;
+    padding: 30px;
+    margin: 30px 20px;
+}
+
+.curiosidade-conteudo {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.curiosidade-conteudo p:first-child {
+    color: #087653;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.curiosidade-conteudo h2 {
+    margin-top: 5px;
+}
