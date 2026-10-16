@@ -1,0 +1,265 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fbfaf5;
+    color: #173b30;
+}
+
+header {
+    width: 92%;
+    max-width: 1200px;
+    min-height: 75px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 420px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+.simbolo {
+    color: #c6a03a;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav a {
+    text-decoration: none;
+    color: #35483d;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+nav a:hover,
+nav .ativo {
+    color: #a17d20;
+}
+
+main {
+    width: 92%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* BANNER */
+
+.banner {
+    min-height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg, rgba(4, 54, 42, .98), rgba(4, 54, 42, .55)),
+        url(img/museu.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.banner-texto {
+    padding: 40px;
+    max-width: 500px;
+}
+
+.categoria {
+    color: #efbd37;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.banner h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1;
+    margin-bottom: 18px;
+}
+
+.banner-texto > p:not(.categoria) {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 25px;
+    background: #efbd37;
+    color: #173b30;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background: #ffda69;
+}
+
+/* HISTÓRIA DO MUSEU */
+
+.origem {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    padding: 45px 0;
+}
+
+.verde {
+    color: #a17d20;
+}
+
+.origem h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 3.5vw, 40px);
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.origem .texto > p:not(.categoria) {
+    color: #59665e;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 13px;
+}
+
+.origem img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+/* LINKS INFERIORES */
+
+.informacoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    width: 100%;
+    padding: 22px 10px;
+    margin: 0 auto 25px;
+    border-top: 1px solid #e5e1d4;
+    border-bottom: 1px solid #e5e1d4;
+}
+
+.informacoes div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 0 0 auto;
+}
+
+.informacoes span {
+    font-size: 24px;
+    color: #a8872e;
+}
+
+.informacoes p {
+    font-size: 10px;
+    line-height: 1.6;
+    color: #68746c;
+}
+
+.informacoes strong {
+    color: #173b30;
+}
+
+footer {
+    text-align: center;
+    background: #103d30;
+    color: white;
+    padding: 25px 15px;
+    font-size: 11px;
+}
+
+footer h3 {
+    font-family: Georgia, serif;
+    margin-bottom: 8px;
+}
+
+footer p {
+    margin-bottom: 5px;
+    color: #e0e8df;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 760px) {
+    header {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .banner {
+        min-height: 320px;
+    }
+
+    .banner-texto {
+        padding: 25px;
+    }
+
+    .origem {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .origem img {
+        height: 230px;
+    }
+
+    .informacoes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 460px) {
+    .cartoes {
+        grid-template-columns: 1fr;
+    }
+
+    .cartao {
+        grid-column: span 1;
+        min-height: 180px;
+    }
+
+    .informacoes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
